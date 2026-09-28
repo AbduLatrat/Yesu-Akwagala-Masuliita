@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yesu Akwagala Sec. & Voc. School</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,6 +97,13 @@
             background: var(--white);
         }
 
+        .site-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
         .top-brand {
             font-size: 1.1rem;
             font-weight: 800;
@@ -184,10 +193,12 @@
 
         .close-drawer-btn:hover { color: var(--white); }
 
-        .badge-svg {
-            width: 60px;
+        .drawer-logo {
+            width: 70px;
             height: 70px;
+            object-fit: contain;
             margin-bottom: 8px;
+            border-radius: 10px;
         }
 
         .brand-box h1 {
@@ -283,7 +294,7 @@
             height: 420px;
             border-radius: 24px;
             overflow: hidden;
-            background: url('20260923_110803.jpg') center/cover no-repeat;
+            background: url('12.jpg') center/cover no-repeat;
             display: flex;
             align-items: flex-end;
             padding: 35px;
@@ -735,7 +746,7 @@
 
         /* --- RESPONSIVE BREAKPOINTS --- */
         @media (max-width: 900px) {
-            .top-nav-links { display: none; } /* Hide horizontal links on smaller screens */
+            .top-nav-links { display: none; }
             .metrics-grid { grid-template-columns: repeat(2, 1fr); }
             .about-grid, .contact-grid, .footer-content { grid-template-columns: 1fr; }
             .tab-pane.active { grid-template-columns: 1fr; }
@@ -761,20 +772,8 @@
                 <span></span>
                 <span></span>
             </button>
-            <svg class="badge-svg" viewBox="0 0 200 240">
-                    <path d="M 100 10 Q 180 10 190 70 Q 190 170 100 230 Q 10 170 10 70 Q 20 10 100 10 Z" fill="#ffffff" stroke="#8C1C13" stroke-width="8"/>
-                    <path d="M 100 20 Q 170 20 180 75 Q 180 160 100 215 Q 20 160 20 75 Q 30 20 100 20 Z" fill="none" stroke="#E07A5F" stroke-width="4"/>
-                    <polygon points="100,40 140,55 100,70 60,55" fill="#8C1C13"/>
-                    <rect x="92" y="70" width="16" height="15" fill="#8C1C13"/>
-                    <path d="M 60 110 Q 100 100 100 130 Q 100 100 140 110 L 140 140 Q 100 130 100 150 Q 100 130 60 140 Z" fill="none" stroke="#8C1C13" stroke-width="4"/>
-                    <path d="M 130 80 Q 150 70 160 85 Q 140 95 130 80 Z" fill="#E07A5F"/>
-                    <circle cx="100" cy="170" r="15" fill="none" stroke="#8C1C13" stroke-width="5" stroke-dasharray="6,4"/>
-                    <path d="M 30 195 Q 100 215 170 195 L 160 215 Q 100 230 40 215 Z" fill="#8C1C13"/>
-                    <text x="100" y="210" font-size="11" fill="#ffffff" font-weight="bold" text-anchor="middle">BEYOND THE LIMIT</text>
-                </svg>
-                <a href="#home" class="top-brand">Yesu Akwagala  Sec. & Vocational School</a>
-               
-            
+            <img src="logo.jpg" alt="Yesu Akwagala Logo" class="site-logo">
+            <a href="#home" class="top-brand">Yesu Akwagala Sec. & Vocational School</a>
         </div>
 
         <!-- Responsive Direct Action Links -->
@@ -796,17 +795,7 @@
         <div>
             <div class="brand-box">
                 <button class="close-drawer-btn" id="drawerCloseBtn"><i class="fa-solid fa-xmark"></i></button>
-                <svg class="badge-svg" viewBox="0 0 200 240">
-                    <path d="M 100 10 Q 180 10 190 70 Q 190 170 100 230 Q 10 170 10 70 Q 20 10 100 10 Z" fill="#ffffff" stroke="#8C1C13" stroke-width="8"/>
-                    <path d="M 100 20 Q 170 20 180 75 Q 180 160 100 215 Q 20 160 20 75 Q 30 20 100 20 Z" fill="none" stroke="#E07A5F" stroke-width="4"/>
-                    <polygon points="100,40 140,55 100,70 60,55" fill="#8C1C13"/>
-                    <rect x="92" y="70" width="16" height="15" fill="#8C1C13"/>
-                    <path d="M 60 110 Q 100 100 100 130 Q 100 100 140 110 L 140 140 Q 100 130 100 150 Q 100 130 60 140 Z" fill="none" stroke="#8C1C13" stroke-width="4"/>
-                    <path d="M 130 80 Q 150 70 160 85 Q 140 95 130 80 Z" fill="#E07A5F"/>
-                    <circle cx="100" cy="170" r="15" fill="none" stroke="#8C1C13" stroke-width="5" stroke-dasharray="6,4"/>
-                    <path d="M 30 195 Q 100 215 170 195 L 160 215 Q 100 230 40 215 Z" fill="#8C1C13"/>
-                    <text x="100" y="210" font-size="11" fill="#ffffff" font-weight="bold" text-anchor="middle">BEYOND THE LIMIT</text>
-                </svg>
+                <img src="logo.jpg" alt="Yesu Akwagala Logo" class="drawer-logo">
                 <h1>Yesu Akwagala</h1>
                 <p>Sec. & Vocational School</p>
             </div>
@@ -845,7 +834,6 @@
                 <p>Empowering young minds through quality secondary learning paired with valuable vocational skills for future self-reliance.</p>
                 <div class="hero-actions">
                     <a href="#admissions" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
-                    <!-- Direct Phone Inquiry Action -->
                     <a href="tel:+256754668250" class="btn btn-light"><i class="fa-solid fa-phone"></i> Inquire Today</a>
                 </div>
             </div>
@@ -1007,15 +995,16 @@
         <section id="gallery" class="section-block">
             <div class="section-header">
                 <div class="section-title-wrap">
-                    <h3>Campus Experience</h3>
-                    <p>A peek inside Yesu Akwagala Secondary & Vocational School Grounds</p>
+                    <h3>Campus Life & Activities</h3>
+                    <p>A peek inside Yesu Akwagala Secondary & Vocational School Grounds, Sports, and Student Life</p>
                 </div>
             </div>
 
             <div class="gallery-grid">
+                <!-- Campus Infrastructure -->
                 <div class="gallery-item">
-                    <img src="20260923_110803.jpg" alt="Campus Administration Building">
-                    <div class="gallery-caption">Main Administration & Church</div>
+                    <img src="12.jpg" alt="Classrooms Block">
+                    <div class="gallery-caption">Classrooms Block</div>
                 </div>
                 <div class="gallery-item">
                     <img src="20260923_110606.jpg" alt="School Entrance Gate">
@@ -1034,8 +1023,72 @@
                     <div class="gallery-caption">Spacious Walkways</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="20260923_110500.jpg" alt="School Facilities">
+                    <img src="12.jpg" alt="School Facilities">
                     <div class="gallery-caption">School Facilities</div>
+                </div>
+
+                <!-- Academic Life & Student Leadership -->
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0170.jpg" alt="Head Girl Campaign Poster">
+                    <div class="gallery-caption">Student Leadership & Elections</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0171.jpg" alt="Students in Classroom Session">
+                    <div class="gallery-caption">Focused Classroom Learning</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0179.jpg" alt="Student Assembly Circle">
+                    <div class="gallery-caption">Student Assembly & House Gatherings</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0182.jpg" alt="Students with Staff">
+                    <div class="gallery-caption">Interactive Learning & Mentorship</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0183.jpg" alt="Students Circle Discussion">
+                    <div class="gallery-caption">Outdoor Student Activities</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0185.jpg" alt="Infrastructure Development">
+                    <div class="gallery-caption">Campus Expansion & Development</div>
+                </div>
+
+                <!-- Sports & Extracurricular Accomplishments -->
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0191.jpg" alt="Boys Soccer Team Lineup">
+                    <div class="gallery-caption">School Football Team</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0195.jpg" alt="Blue Football Squad">
+                    <div class="gallery-caption">Sports Team Lineup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0197.jpg" alt="Boys Football Squad">
+                    <div class="gallery-caption">Sports Excellence & Teamwork</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0199.jpg" alt="Yellow Football Squad">
+                    <div class="gallery-caption">Yellow House Football Team</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0202.jpg" alt="Girls Netball Team">
+                    <div class="gallery-caption">Girls Netball Team</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0204.jpg" alt="Football Team Trophy Victory">
+                    <div class="gallery-caption">Trophy Champions Celebration</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0206.jpg" alt="Girls Team Trophy Victory">
+                    <div class="gallery-caption">Girls Sports Champions</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0213.jpg" alt="Football Team Awarding">
+                    <div class="gallery-caption">Team Trophy Ceremony</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="IMG-20260924-WA0219.jpg" alt="Football Team Celebration">
+                    <div class="gallery-caption">Post-Match Team Celebration</div>
                 </div>
             </div>
         </section>
